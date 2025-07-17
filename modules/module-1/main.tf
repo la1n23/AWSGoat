@@ -3445,7 +3445,7 @@ resource "aws_internet_gateway" "goat_gw" {
 resource "aws_subnet" "goat_subnet" {
   vpc_id                  = aws_vpc.goat_vpc.id
   cidr_block              = "192.168.0.0/24"
-  availability_zone       = "us-east-1a"
+  availability_zone       = "eu-north-1a"
   map_public_ip_on_launch = true
   tags = {
     Name = "AWS_GOAT App subnet"
